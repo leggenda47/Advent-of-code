@@ -59,7 +59,10 @@ void second(List<String> lines) {
 }
 
 void main(List<String> args) {
-  final lines = File('./input.txt').readAsLinesSync();
+  const day = 3;
+
+  final lines =
+      File('${Directory.current.path}/2022/$day/input.txt').readAsLinesSync();
 
   first(lines);
   second(lines);
